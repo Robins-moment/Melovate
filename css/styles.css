@@ -1,1 +1,50 @@
-
+/* Melovate theme: black, white, pink, purple */
+:root{--bg:#FFF6FB;--ink:#1A0B2E;--mute:#6B5A80;--card:#fff;--line:#EBD3F2;--purple:#7B2FF7;--pink:#FF2E93}
+@media (prefers-color-scheme:dark){:root{--bg:#0A0A0F;--ink:#fff;--mute:#B9A9CC;--card:#17101F;--line:#34224A;--purple:#B77CFF;--pink:#FF5CAD}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Nunito,system-ui,sans-serif}
+h1,h2,h3{font-family:Fredoka,'Trebuchet MS',sans-serif;line-height:1.15;margin:0 0 .4em}
+.hero{padding:26px 18px 22px;max-width:760px;margin:0 auto;background:linear-gradient(120deg,#7B2FF7,#FF2E93);color:#fff;border-radius:0 0 30px 30px}
+.hero h1{font-size:2.1rem}.hero p{margin:0;opacity:.92}
+.sub{color:var(--mute);margin:0}
+nav{position:sticky;top:0;background:var(--bg);z-index:5;display:flex;gap:6px;overflow-x:auto;padding:10px 18px;max-width:760px;margin:auto;border-bottom:1px solid var(--line)}
+nav button{flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:800 15px Nunito,sans-serif;padding:8px 16px;border-radius:999px;cursor:pointer}
+nav button[aria-current=true]{background:var(--pink);color:#fff;border-color:var(--pink)}
+button:focus-visible{outline:3px solid var(--purple);outline-offset:2px}
+main{max-width:760px;margin:auto;padding:18px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px;margin-bottom:14px;box-shadow:0 4px 0 var(--line)}
+.bar{height:12px;background:var(--line);border-radius:9px;overflow:hidden;margin:8px 0}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#7B2FF7,#FF2E93)}
+.btn{background:var(--pink);color:#fff;border:0;border-radius:10px;padding:10px 18px;font:800 16px Nunito,sans-serif;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.lesson{display:flex;gap:12px;align-items:flex-start}
+.dot{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font-weight:800}
+.done .dot{background:var(--purple);border-color:var(--purple);color:#fff}
+.today{border-color:var(--purple)}
+.chords{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.chords .card{text-align:center;margin:0;padding:10px;color:var(--ink);cursor:pointer}
+.chords h3{font-size:1.2rem;margin:0}
+.group-title{margin:18px 4px 8px}
+svg text{fill:var(--ink);font:700 11px Nunito,sans-serif}
+.arrows{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;text-align:center;margin:10px 0}
+.arrows div{padding:8px 0;border-radius:8px;background:var(--bg);font-weight:800;font-size:1.3rem;min-height:48px}
+.arrows small{display:block;font-size:.75rem;color:var(--mute);font-weight:600}
+.arrows .on{background:var(--purple);color:#fff}
+.fb{display:grid;grid-template-columns:28px repeat(6,1fr);gap:3px;margin:10px 0;font-weight:800}
+.fb span{display:grid;place-items:center;font-size:.8rem;color:var(--mute)}
+.fb button{border:0;border-bottom:2px solid var(--purple);background:var(--card);color:var(--ink);font:800 15px Nunito,sans-serif;cursor:pointer;border-radius:3px;min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:3px;padding:4px 0}
+.fb button.open{background:var(--line)}.fb button.hit{background:var(--pink);color:#fff}
+.ds{display:flex;gap:3px;min-height:14px}.ds i{width:13px;height:13px;border-radius:50%;border:2px solid var(--card)}
+.chip{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 12px;font:700 14px Nunito,sans-serif;cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+.chip i{width:14px;height:14px;border-radius:50%}
+.chip[aria-pressed=true]{border-color:var(--pink);box-shadow:0 2px 0 var(--pink)}
+.map{font:500 1.2rem Fredoka,sans-serif;background:var(--bg);border-radius:14px;padding:10px 14px;margin:8px 0}
+.song{line-height:2.6;font-size:1.05rem;margin-top:14px}
+.seg{display:inline-flex;flex-direction:column;vertical-align:bottom;line-height:1.3;white-space:pre}
+.seg b{color:var(--pink);font-weight:800;min-height:1.3em}
+.cert{text-align:center;border:3px double var(--purple);padding:28px 16px}
+.cert .nm{font:700 1.8rem Fredoka,sans-serif;color:var(--pink)}
+.soon{text-align:center;border-style:dashed}
+input,select{font:600 16px Nunito,sans-serif;padding:8px 10px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);max-width:100%}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
