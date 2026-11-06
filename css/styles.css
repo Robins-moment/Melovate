@@ -48,3 +48,8 @@ svg text{fill:var(--ink);font:700 11px Nunito,sans-serif}
 .soon{text-align:center;border-style:dashed}
 input,select{font:600 16px Nunito,sans-serif;padding:8px 10px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);max-width:100%}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.songrow{display:block;width:100%;text-align:left;cursor:pointer;color:var(--ink);font:inherit}
+.songrow h3{margin:0 0 2px}
+.cboxes{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.cbx{min-width:64px;text-align:center;padding:10px 14px;border:2px solid var(--line);border-radius:14px;font:500 1.2rem Fredoka,sans-serif;background:var(--bg)}
+.cbx.on{background:var(--pink);color:#fff;border-color:var(--pink)}
